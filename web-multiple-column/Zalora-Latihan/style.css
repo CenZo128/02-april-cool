@@ -1,0 +1,8 @@
+.header, .footer {
+    background-color: turquoise;
+    padding: 1rem;
+}
+
+.row > div {
+    margin-bottom : 1rem;
+}

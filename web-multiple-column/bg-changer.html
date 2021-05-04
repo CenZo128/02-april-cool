@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Color Changer</h3>
+    <div class="info">
+        <p>color :</p>
+        <span id="warna">tes</span>
+    </div>
+    <button id="btn">Change Color</button>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <script>
+        var colors = ["red","blue","green"]
+        
+
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                var random = Math.floor(Math.random() * 3)
+                console.log(random)
+                
+                $('#warna').html = random;
+
+                $('body').css({
+                    'background' : colors[random],
+                    'transition' : 'all 0.2s'
+                })
+
+            })
+
+        })
+    </script>
+</body>
+
+</html>
