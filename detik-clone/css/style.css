@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+:root {
+    --primary-color : #244B9C;
+    --primary-color-light: #007cBd;
+    --yellow-color : #FCC43F;
+    font-size: 14px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+     
+}
+
+.navbar-main {
+    border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+.btn-blue {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 1.25rem;
+    border: 2px solid var(--primary-color)
+}
+
+.btn-blue:hover {
+    background-color: var(--primary-color-light);
+    border: 2px solid var(--primary-color-light);
+    color: #ffffff;
+}
+
+.btn-outline-blue {
+    background-color: #ffffff;
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+    border-radius: 1.5rem;
+}
+
+.btn-outline-blue:hover{
+    background-color: var(--primary-color);
+    color: #ffffff;
+}
+
+.main-menu .container{
+    background: rgb(36,75,156);
+    background: linear-gradient(0deg, rgba(36,75,156,1) 0%, rgba(0,124,189,1) 90%);
+}
+.main-menu a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.headline-news .card {
+    border: none;
+}
+.headline-news .card-header {
+    padding : 0;
+    position: relative;
+}
+.headline-news a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+.headline-news a:hover {
+    color: var(--yellow-color);
+    cursor : pointer;
+}
+.headline-news .card-body {
+    background: rgb(36,75,156);
+    background: linear-gradient(0deg, rgba(36,75,156,1) 0%, rgba(0,124,189,1) 90%);
+}
+
+.headline-news-text {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+}
+.headline-news-text h3:hover {
+    color: var(--yellow-color);
+    cursor: pointer;
+}
+.text-yellow {
+    color: var(--yellow-color);
+    font-weight: bold;
+}
+
+.news-card h5:hover {
+    color: var(--primary-color);
+    cursor: pointer;
+}
