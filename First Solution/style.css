@@ -1,0 +1,123 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	background: url("images/regal.png") ;
+}
+.page-section {
+	padding: 25px;
+}
+hr {
+	border-top: 1px solid #c0392b;
+	margin-bottom: 25px;
+}
+.card {
+	margin-bottom: 10px;
+}
+iframe {
+ 		width: 100%;
+ 		height: auto;
+ 	}
+/*EVENTS*/
+#events {
+	text-align: center;
+}
+
+.card-bottom {
+	padding: 10px;
+	color: #ffffff;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+}
+#events .card-bottom {
+	background: #c0392b;
+}
+
+/*PRODUCT*/
+#product {
+	text-align: center;
+	background: #ffffff;
+	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+}
+#product .card-body {
+	background: #c0392b;
+	color: #ffffff;
+}
+#product .card-bottom {
+	background: #e74c3c;
+}
+#product i {
+	font-size: 24px;
+	margin-left: 10px;
+}
+#product .card-bottom p {
+	font-size: 18px;
+	margin-bottom: 10px;
+}
+
+/*SERVICE*/
+ #service {
+ 	text-align: center;
+ }
+
+#service .col-md-3 .col-md-3 {
+	background: #c0392b;
+	color: #ffffff;
+	padding: 0;
+	border-radius: 5px;
+}
+#service i {
+	font-size: 24px;
+	padding-top: 15px;
+}
+#service .col-md-3 .col-md-9 p {
+	font-size: 18px;
+	padding-top: 15px;
+}
+#service .row:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+/*PROFILE*/
+ #profile {
+ 	background-color: rgba(204,204,204,0.3); 
+ 	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+ }
+ #profile .col-md-8 .col-md-6 .col-md-3 {
+	background: #c0392b;
+	color: #ffffff;
+	padding: 0;
+	border-radius: 5px;
+}
+ #profile i {
+	font-size: 30px;
+	padding-top: 15px;
+
+}
+#profile .col-md-8 .col-md-6 .col-md-9 p {
+	font-size: 24px;
+	padding-top: 15px;
+}
+
+/*TEAMS*/
+ #teams {
+ 	text-align: center;
+ }
+#teams img {
+	margin-bottom: 10px;
+}
+
+/*CONTACT*/
+ #contact {
+ 	text-align: center;
+ 	background: #ffffff;
+ 	border-top: 1px solid #cccccc;
+	border-bottom: 1px solid #cccccc;
+ }
+
+/*COPYRIGHT*/
+ #copyright {
+ 	background: #25282a;
+ 	text-align: center;
+ 	color: #ffffff;
+ }
