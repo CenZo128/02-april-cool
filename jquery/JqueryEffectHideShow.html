@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Effect Hide Show</title>
+</head>
+<body>
+<p>Ini adalah paragraph</p>
+<span>Saya Belajar Hide</span>
+<div>Menghilang</div>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+
+		//Execution Function
+		$('p').hide(1000);
+		$('span').hide(1000);
+		$('div').hide(1000, function(){
+			$('p').show('slow');
+			$('span').show('fast');
+		});
+	});
+	//Execution Stack
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Effect Toggle</title>
+</head>
+<body>
+
+<button id="muncul">Toggle</button>
+<p>Saya lagi belajar Toggle</p>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#muncul').click(function(){
+			$('p').toggle(300);
+		});
+
+		
+	});
+</script>
+</body>
+</html>

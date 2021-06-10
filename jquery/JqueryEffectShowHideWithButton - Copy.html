@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Effect Hide Show With Button</title>
+</head>
+<body>
+
+<button id="show-e">Show</button>
+<button id="hide-e">Hide</button>
+<p>Saya belajar hal baru :)</p>
+
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#hide-e').click(function(){
+			$('p').hide(300);
+		});
+		$('#show-e').click(function(){
+			$('p').show('fast');
+		});
+	});
+</script>
+</body>
+</html>

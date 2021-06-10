@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Event</title>
+	
+</head>
+<body>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// Event Click
+			$('.btn1').click(function(){
+				$('p').css({
+					'color':'#123456',
+					'font-family':'Arial'
+				});
+			});
+			$('.btn2').click(function(){
+				$('p').css('color','orange');
+			});
+			$('.btn3').click(function(){
+				$('p').css('color','blue');
+			});
+			$('.btn4').click(function(){
+				$('p').css('color','green');
+			});
+			$('.btn5').click(function(){
+				$('p').css('color','yellow');
+			});
+
+			// Event Change
+			$("select").change(function(){
+				var pilihan = $("select").val();
+				$("#hasil").html("Ini adalah <br>" + pilihan);
+			});
+
+			// Event Keyup
+			$("#nama").keyup(function(){
+				var namanya = $("#nama").val();
+				$("#nama1").text("Namanya <br>" + namanya);
+			});
+
+			// Event Keypress
+			$("#namakeypress").keypress(function(event){
+				var name = $("#namakeypress").val();
+				if (event.which  == 13){
+					$("#nama1keypress").text("Nama nya adalah " + name);	
+				}
+			});
+			$("#fullname").keypress(function(event){
+				
+				if (event.which  == 13){
+					var nama1 = $("#fullname").val();
+					if(nama1 != ""){
+						$(".fullname1").html(nama1);	
+					}
+					else{
+						$(".fullname1").html("<i style='color:red'>Required</i>");	
+					}
+				}
+			});
+
+		});
+	</script>
+	
+	<!-- SIAPKAN HTML -->
+	<button class="btn1">Click 1</button>
+	<button class="btn2">Click 2</button>
+	<button class="btn3">Click 3</button>
+	<button class="btn4">Click 4</button>
+	<button class="btn5">Click 5</button>
+	<p>Seru belajar jQuery</p>
+
+	<select>
+		<option value="English">English</option>
+		<option value="Indonesia">Indonesia</option>
+		<option value="Japanese">Japanese</option>
+	</select>
+	<br/>
+	<span id="hasil"></span>
+	<br/>
+	<br/>
+
+	<input type="text" id="nama"></input>
+	<p id="nama1"></p>
+	<br/>
+	<br/>
+
+	<input type="text" id="namakeypress"></input>
+	<p id="nama1keypress"></p>
+
+	<input type="text" id="fullname">
+	<p>Your name is <span class="fullname1">...</span></p>
+</body>
+</html>

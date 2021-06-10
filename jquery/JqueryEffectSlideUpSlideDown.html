@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Effect Slide Up Slide Down</title>
+</head>
+<body>
+
+<button id="slideup">Slide Up</button>
+<button id="slidedown">Slide Down</button>
+<p>Selamat Pagi semuanyaaa</p>
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+<script type="text/javascript">
+	
+
+	$(document).ready(function(){
+		$('#slideup').click(function(){
+			$('p').slideUp('slow');
+		});
+		$('#slidedown').click(function(){
+			$('p').slideDown('fast');
+		});
+		
+	});
+</script>
+</body>
+</html>

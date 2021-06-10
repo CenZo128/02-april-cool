@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Background</title>
+    <link href="https://fonts.googleapis.com/css?family=Comic+Neue&display=swap" rel="stylesheet"> 
+    <style>
+        /* root element => ukuran standar dr web kita = 16px */
+        body{
+            font-family: 'Comic Neue', cursive;
+        }
+        h1{
+            text-align: center;
+            font-variant: small-caps;
+        }
+        .container{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .btn{
+            padding: 10px 15px;
+            border: 2px solid #000000;
+            background: #ffffff;
+            color: #000000;
+            border-radius: 10px;
+            font-size: 1.5rem;
+            font-family: inherit;
+        }
+        .btn:hover{
+            background: #000000;
+            color: #ffffff;
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Change Background</h1>
+    <div class="container">
+        <button id="changer" class="btn">CHANGE COLOR</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+        // 1. Buat array colors
+        // 2. Buat random generator
+        //Math.random() -> 0 - 1
+        // 3. Ambil warna dari array
+        // 4. event click di button                
+        // 5. manipulasi css dalam jquery
+
+        var colors = ["#e17055","#74b9ff","#55efc4","#a29bfe","#fdcb6e"] 
+       
+        $(document).ready(function(){
+            $('body').click(function(){
+                var random = Math.floor(Math.random()*colors.length)
+                console.log(colors[random])
+                $('body').css({
+                    'background' : colors[random],
+                    'transition' : 'all 0.3s'
+                })
+            })
+            // $('#changer').click(function(){
+            //     var random = Math.floor(Math.random()*colors.length)
+            //     console.log(colors[random])
+            //     $('body').css({
+            //         'background' : colors[random],
+            //         'transition' : 'all 0.3s'
+            //     })
+            // })
+        })
+    </script>
+</body>
+</html>

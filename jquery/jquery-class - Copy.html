@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Class</title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<style type="text/css">
+		.warna {
+			color: orange;
+			font-size: 20px;
+		}
+		.judul {
+			color: red;
+			font-size: 20px;
+		}
+		.kotak {
+			width: 100px;
+			height: 100px;
+			background: yellow;
+		}
+
+		.main {
+			border: 1px solid blue;
+			width: 400px;
+			height: 400px;
+			padding: 10px;
+			margin: 15px;
+		}
+		.box {
+			background: red;
+			color: white;
+			padding: 10px;
+		}
+	</style>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			//Add Class
+			$("p").addClass("warna");
+			//RemoveClass
+			$("span").removeClass("judul");
+			//Remove
+			$("nav").remove();
+
+			$("<div class='box'>Prepend</div>").prependTo(".main");
+			$("<div class='box'>Append</div>").appendTo(".main");
+			$(".main").before("<div class='box'>Before</div>");
+			$(".main").after("<div class='box'>After</div>");
+		});
+	</script>
+</head>
+<body>
+	<p>Saya belajar AddClass</p>
+	<span class="judul">Saya belajar RemoveClass</span>
+	<nav class="kotak"></nav>
+	
+	<div class="main">
+		
+		<p>Saya belajar hal baru</p>
+		
+	</div>
+
+</body>
+</html>

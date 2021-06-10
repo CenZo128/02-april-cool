@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Effect Animate</title>
+
+	
+</head>
+<body>
+	<button id="animation1">Efek Animate 1</button>
+	<button id="animation2">Efek Animate 2</button>
+	<div class="kotak"></div>
+
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.kotak').css({
+			'width': '150px',
+			'height': '150px',
+			'background': 'orangered',
+			'position':'absolute',
+			'left':'0'
+		});
+		$('#animation1').click(function(){
+			$('.kotak').animate({
+				'left':'+=50%',
+				'padding':'25px',
+
+			}, 2000);
+		});
+		$('#animation2').click(function(){
+			$('.kotak').animate({
+				'top':'+=50%',
+				'padding':'45px',
+
+			}, 5000);
+		});
+
+	});
+	</script>
+</body>
+</html>
